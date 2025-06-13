@@ -1,0 +1,25 @@
+:root{
+  /* Typografie */
+  --font-family-primary: 'IBM Plex Sans', sans-serif;
+
+  /* Schriftgrößen */
+  --font-size-12: 0.75rem;
+  --font-size-16: 1rem; 
+  --font-size-24: 1.5rem;
+  --font-size-32: 2rem;
+
+  /* Schriftstärken - basierend auf den extrahierten Werten */
+  --font-weight-regular: 300;
+  --font-weight-bold: 400;
+
+  /* Zeilenabstand */
+  --line-height: 140%;
+
+  /* Farben */
+  --color-black:       #000000;
+  --color-black-light: #222222;
+  --color-white:       #ffffff;
+  --color-grey:        #F2F2F2;
+  --color-grey-dark:   #B4B4B4;
+  --color-yellow:      #FEB701;
+}

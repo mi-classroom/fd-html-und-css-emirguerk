@@ -1,0 +1,26 @@
+@font-face {
+    font-family: "IBM Plex Sans";
+    src: url("../fonts/IBM_Plex_Sans-2/static/IBMPlexSans_Condensed-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "IBM Plex Sans";
+    src: url("../fonts/IBM_Plex_Sans-2/static/IBMPlexSans_Condensed-Bold.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+
+  src: local('MaterialIcons'),
+    local('MaterialIcons-Regular'),
+    url('/fonts/MaterialIcons/MaterialIcons-Regular.woff2') format('woff2'),
+    url('/fonts/MaterialIcons/MaterialIcons-Regular.woff') format('woff'),
+    url('/fonts/MaterialIcons/MaterialIcons-Regular.ttf') format('truetype');
+}
