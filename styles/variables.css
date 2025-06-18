@@ -18,7 +18,7 @@
   /* font weights */
   --font-weight-light: 300;
   --font-weight-regular: 400;
-  --font-weight-bold: 700;
+  --font-weight-bold: 600;
   
   /* line heights */
   --line-height-tight: 120%;
@@ -33,10 +33,12 @@
 
   --color-background-default: #FFFFFF;
   --color-background-200: #F2F2F2;
+  --color-background-300: #B4B4B4;
   --color-text-default: #000000;
 
   
   /* spaces */
+  --spacing-4xs: 0.063rem; /* 1px */
   --spacing-3xs: 0.125rem; /* 2px */
   --spacing-2xs: 0.25rem;  /* 4px */
   --spacing-xs: 0.5rem;    /* 8px */
