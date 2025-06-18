@@ -1,0 +1,51 @@
+header{
+    display: none;
+}
+
+html, body{
+  scroll-behavior: smooth;
+}
+
+body{
+    font-family: var(--font-family-primary);
+    font-weight: var(--font-weight-light);
+    padding: var(--spacing-l);
+    background-color: var(--color-background-default);
+}
+
+h1{
+    font-size: var(--font-size-2xl);
+    line-height: var(--line-height-tight);
+    margin-bottom: var(--spacing-m);
+}
+
+h2{
+    font-size: var(--font-size-xl);
+    line-height: var(--line-height-tight);
+    margin-bottom: var(--spacing-m);
+}
+
+h3{
+    margin-bottom: var(--spacing-m);
+}
+
+h1, h3, dt{
+    font-weight: var(--font-weight-regular);
+}
+
+p{
+    font-weight: var(--font-weight-light);
+    line-height: var(--line-height-normal);
+    font-size: var(--font-size-m);
+    margin-bottom: var(--spacing-m);
+}
+
+figure img{
+    display: block;
+    width: 100%;
+}
+
+section{
+    margin-top: var(--spacing-2xl);
+    margin-bottom: var(--spacing-2xl);
+}
