@@ -1,0 +1,22 @@
+.icon {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  margin-right: var(--size-xxs);
+  direction: ltr;
+  font-family: material-icons;
+  font-size: var(--font-size-2xl);
+  font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: inherit;
+  text-rendering: optimizelegibility;
+  text-transform: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  word-wrap: normal;
+  color: var(--color-primary-default);
+}

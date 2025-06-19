@@ -1,5 +1,14 @@
 header{
-    display: none;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--spacing-3xl);
+    nav ul li{
+        display: none;
+    }
+
+    nav ul li:last-child{
+        display: block;
+    }
 }
 
 html, body{
@@ -9,8 +18,11 @@ html, body{
 body{
     font-family: var(--font-family-primary);
     font-weight: var(--font-weight-light);
-    padding: var(--spacing-l);
     background-color: var(--color-background-default);
+}
+
+main, header{
+        padding: var(--spacing-l);
 }
 
 h1{
@@ -48,4 +60,22 @@ figure img{
 section{
     margin-top: var(--spacing-2xl);
     margin-bottom: var(--spacing-2xl);
+}
+
+footer{
+    background-color: var(--color-background-700);
+    color: var(--color-background-default);
+    padding: var(--spacing-l);
+
+    div:first-child{
+        margin-top: var(--spacing-xl);
+    }
+
+    div, nav{
+        margin-bottom: var(--spacing-2xl);
+    }
+
+        div:last-child{
+        margin-bottom: 0;
+    }
 }

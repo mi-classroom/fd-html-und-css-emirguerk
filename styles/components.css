@@ -1,3 +1,22 @@
+/* general */
+
+.searchIcon, .menuIcon{
+    display: block;
+    cursor: pointer;
+}
+
+/* general */
+
+/* header-navigation */
+
+.header-navigation{
+    display: flex;
+    justify-content: space-between;
+    width: var(--spacing-5xl);
+}
+
+/* header-navigation */
+
 /* overview-container */
 
 .overview-container{
@@ -93,3 +112,40 @@
 }
 
 /* custom-list */
+
+/* footer-navigation */
+
+.footer-navigation{
+
+    h4{
+        font-weight: var(--font-weight-regular);
+        margin-bottom: var(--spacing-m);
+    }
+
+    ul li{
+        margin-bottom: var(--spacing-s);
+
+        a{
+            text-decoration: none;
+            color: var(--color-background-default);
+            font-weight: var(--font-weight-light);
+        }
+    }
+}
+
+/* footer-navigation */
+
+/* footer-contact */
+
+.footer-contact{
+    h4{
+        font-weight: var(--font-weight-regular);
+        margin-bottom: var(--spacing-m); 
+    }
+
+    a{
+        color: var(--color-background-default);
+    }
+}
+
+/* footer-contact */

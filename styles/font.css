@@ -20,12 +20,12 @@
 }
 
 @font-face {
-  font-display: swap;
-  font-family: "Material Icons";
-  font-style: normal;
-  font-weight: 400;
+    font-display: swap;
+    font-family: material-icons;
+    font-style: normal;
+    font-weight: 400;
 
-  src: local('MaterialIcons'),
+    src: local('MaterialIcons'),
     local('MaterialIcons-Regular'),
     url('/fonts/MaterialIcons/MaterialIcons-Regular.woff2') format('woff2'),
     url('/fonts/MaterialIcons/MaterialIcons-Regular.woff') format('woff'),
