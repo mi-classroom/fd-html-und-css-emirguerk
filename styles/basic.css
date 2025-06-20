@@ -1,4 +1,8 @@
-header{}
+header{
+    nav{
+        display: none;
+    }
+}
 
 html, body{
   scroll-behavior: smooth;
