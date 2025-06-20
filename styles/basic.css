@@ -1,7 +1,7 @@
 header{
     display: flex;
     justify-content: space-between;
-    nav{
+    nav, form{
         display: none;
     }
 }

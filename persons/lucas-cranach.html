@@ -27,17 +27,33 @@
             </button>
         </div>
 
-        <nav>
-            <button>
-                <span class="icon">close</span>
-            </button>
-            <ul>
+        <form action="/" class="header-navigation">
+            <div class="header-close-container">
+                <button class="header-button">
+                    <span class="icon">close</span>
+                </button>
+            </div>
+            <div class="header-search-form">
+                <label for=""></label>
+                <input type="text" placeholder="Suchwort eingeben">
+
+                <button type="submit" class="form-button"><span class="icon white-color-icon">search</span>Search</button>
+            </div>
+        </form>
+
+        <nav class="header-navigation">
+            <div class="header-close-container">
+                <button class="header-button">
+                    <span class="icon">close</span>
+                </button>
+            </div>
+            <ul class="header-navigation-contnet-container">
                 <li>
                     <a href="">Archiv</a>
                     <ul>
                         <li><a href="">Alle Werke</a></li>
                         <li><a href="">Gemälde</a></li>
-                        <li><a href="">Gemälde</a></li>
+                        <li><a href="">Archivalien</a></li>
                     </ul>
                 </li>
                 <li>

@@ -55,7 +55,6 @@
 
     #active-anker a{
         color: var(--color-text-default);
-        opacity: 1;
         cursor: default;
     }
 
@@ -63,7 +62,6 @@
         font-size: var(--spacing-m);
         text-decoration: none;
         color: var(--color-background-300);
-        opacity: 0.75;
     }
 }
 
@@ -142,3 +140,107 @@
 }
 
 /* header-button */
+
+/* header-navigation */
+
+.header-navigation{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-background-default);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &.is-active{
+        display: flex;
+    }
+}
+
+.header-close-container{
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: var(--spacing-l);
+}
+
+.header-navigation-contnet-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+
+    > li{
+        text-align: center;
+        width: 100%;
+        border-bottom: var(--spacing-3xs) solid var(--color-primary-default);
+        display: flex;
+        flex-direction: column;
+
+        > a, ul > li{
+            padding-top: var(--spacing-m);
+            padding-bottom: var(--spacing-m);
+        }
+
+        a{
+            color: var(--color-text-default);
+            text-decoration: none;
+            font-size: var(--font-size-l);
+            font-weight: var(--font-weight-light);
+        }
+
+        > a{
+            font-weight: var(--font-weight-regular);
+        }
+    }
+
+    > li:last-child{
+        border: none;
+    }
+}
+
+.header-search-form{
+    display: flex;
+
+    input{
+        font-size: var(--font-size-l);
+        border: none;
+        border-bottom: var(--spacing-4xs) solid var(--color-text-default);
+    }
+
+    input:focus{
+         outline: none;
+    }
+}
+
+body:has(.header-navigation.is-active) {
+  overflow: hidden;
+}
+
+/* header-navigation */
+
+/* form-button */
+
+.form-button{
+    margin-left: var(--spacing-xs);
+    color: var(--color-background-default);
+    background-color: var(--color-primary-default);
+    font-size: var(--font-size-l);
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--spacing-xs);
+    cursor: pointer;
+
+    span{
+        color: var(--color-background-default);
+        margin-right: var(--spacing-4xs);
+        font-size: var(--font-size-xl)
+    }
+}
+
+/* form-button */
