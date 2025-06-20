@@ -141,9 +141,9 @@
 
 /* header-button */
 
-/* header-navigation */
+/* header-overlay */
 
-.header-navigation{
+.header-overlay{
     position: fixed;
     top: 0;
     left: 0;
@@ -166,7 +166,7 @@
     margin: var(--spacing-l);
 }
 
-.header-navigation-contnet-container{
+.header-overlay-contnet-container{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -216,7 +216,7 @@
     }
 }
 
-body:has(.header-navigation.is-active) {
+body:has(.header-overlay.is-active) {
   overflow: hidden;
 }
 
