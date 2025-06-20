@@ -130,3 +130,15 @@
 }
 
 /* footer-contact */
+
+/* header-button */
+
+.header-button{
+    border: none;
+    padding: 0;
+    background-color: var(--color-background-default);
+    cursor: pointer;
+    margin-left: var(--spacing-m);
+}
+
+/* header-button */
