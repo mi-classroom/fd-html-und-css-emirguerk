@@ -133,10 +133,16 @@
 
 .header-button{
     border: none;
-    padding: 0;
+    padding: var(--spacing-3xs);
     background-color: var(--color-background-default);
     cursor: pointer;
     margin-left: var(--spacing-m);
+}
+
+.header-button:hover{
+    background-color: var(--color-background-200);
+    transition: background-color 0.2s ease;
+    border-radius: 1rem;
 }
 
 /* header-button */
