@@ -19,3 +19,11 @@ document.querySelector('[data-js-header-search]').addEventListener('submit', (ev
     console.log(`Search: ${event.target[1].value}`)
     document.querySelector('[data-js-header-search]').classList.remove('is-active')
 })
+
+document.querySelectorAll('[data-js-page-navigation-section] > h2').forEach((headerElement) => {
+    const headerId = headerElement.textContent.toLocaleLowerCase().replaceAll(" ", "-")
+    headerElement.parentElement.setAttribute('id', `${headerId}`)
+    document.querySelector('[data-js-page-navigation-nav] > ul').innerHTML += `
+        <li><a href="#${headerId}">${headerElement.textContent}</a></li>
+    `
+})
