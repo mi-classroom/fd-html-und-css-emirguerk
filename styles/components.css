@@ -220,7 +220,7 @@ body:has(.header-overlay.is-active) {
   overflow: hidden;
 }
 
-/* header-navigation */
+/* header-overlay */
 
 /* form-button */
 
@@ -236,7 +236,7 @@ body:has(.header-overlay.is-active) {
     padding: var(--spacing-xs);
     cursor: pointer;
 
-    span{
+    .icon{
         color: var(--color-background-default);
         margin-right: var(--spacing-4xs);
         font-size: var(--font-size-xl)
