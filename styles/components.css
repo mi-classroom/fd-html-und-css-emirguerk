@@ -49,13 +49,13 @@
         border-left: var(--color-background-300) solid var(--spacing-3xs);
     }
 
-    ul #active-anker{
+    ul li:hover{
         border-left: var(--color-primary-default) solid var(--spacing-3xs);
-    }
 
-    #active-anker a{
-        color: var(--color-text-default);
-        cursor: default;
+        a{
+            color: var(--color-text-default);
+            cursor: pointer;
+        }
     }
 
     a{

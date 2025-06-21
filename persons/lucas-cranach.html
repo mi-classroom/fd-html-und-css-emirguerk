@@ -27,9 +27,9 @@
             </button>
         </div>
 
-        <form action="/" class="header-overlay">
+        <form action="/persons/lucas-cranach.html" class="header-overlay" data-js-header-search>
             <div class="header-close-container">
-                <button class="header-button">
+                <button type="button" class="header-button" data-js-close-button>
                     <span class="icon">close</span>
                 </button>
             </div>
@@ -41,9 +41,9 @@
             </div>
         </form>
 
-        <nav class="header-overlay">
+        <nav class="header-overlay" data-js-header-nav>
             <div class="header-close-container">
-                <button class="header-button">
+                <button type="button" class="header-button" data-js-close-button>
                     <span class="icon">close</span>
                 </button>
             </div>
@@ -72,19 +72,14 @@
     </header>
     <main>
         <nav class="link-anker">
-            <h2>Inhalt</h2>
-            <ul>
-                <li><a href="#lucas-cranach-der-aeltere">Lucas Cranach der Ältere</a></li>
-                <li id="active-anker"><a href="#hans-cranach">Hans Cranach</a></li>
-                <li><a href="#lucas-cranach-der-juengere">Lucas Cranach der Jüngere</a></li>
-            </ul>
+
         </nav>
 
         <h1>Biografien von Lucas Cranach</h1>
 
         <article>
 
-            <section id="lucas-cranach-der-aeltere">
+            <section data-js-page-navigation-section>
                 <h2>Lucas Cranach der Ältere</h2>
                 <div class="overview-container">
                     <h4>Kurzüberlick</h4>
@@ -235,7 +230,7 @@
                 </dl>
             </section>
 
-            <section id="hans-cranach">
+            <section data-js-page-navigation-section>
                 <h2>Lucas Cranach der Ältere</h2>
 
                 <figure>
@@ -296,7 +291,7 @@
                 </dl>
             </section>
 
-            <section id="lucas-cranach-der-juengere">
+            <section data-js-page-navigation-section>
                 <h2>Lucas Cranach der Ältere</h2>
 
                 <figure>
@@ -409,6 +404,13 @@
             <p>Stiftung Museum Kunstpalast, Düsseldorf / Technische Hochschule Köln, 2025</p>
         </div>
     </footer>
+
+
+    <!--scripts-->
+
+    <script src="../scripts/main.js" defer></script>
+
+    <!--scripts-->
 </body>
 
 </html>
