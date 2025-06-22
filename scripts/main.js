@@ -1,29 +1,45 @@
-document.querySelector('[data-js-menu-button]').addEventListener('click', () => {
-    document.querySelector('[data-js-header-nav]').classList.add('is-active')
+// Menu Navigation
+const navigationMenuButton = document.querySelector('[data-js-menu-button]');
+const navigationCloseButton = document.querySelector('nav [data-js-close-button]');
+const navigationMenuClassList = document.querySelector('[data-js-header-nav]').classList
+
+navigationMenuButton.addEventListener('click', () => {
+    navigationMenuClassList.add('is-active')
 })
 
-document.querySelector('nav [data-js-close-button]').addEventListener('click', () => {
-    document.querySelector('[data-js-header-nav]').classList.remove('is-active')
+navigationCloseButton.addEventListener('click', () => {
+    navigationMenuClassList.remove('is-active')
 })
 
-document.querySelector('[data-js-searach-button]').addEventListener('click', () => {
-    document.querySelector('[data-js-header-search]').classList.add('is-active')
-})
+// Search Form
+const searchFormButton = document.querySelector('[data-js-searach-button]');
+const searchFormCloseButton = document.querySelector('form [data-js-close-button]');
+const searchForm = document.querySelector('[data-js-header-search]');
+const searchFormClassList = searchForm.classList;
 
-document.querySelector('form [data-js-close-button]').addEventListener('click', () => {
-    document.querySelector('[data-js-header-search]').classList.remove('is-active')
-})
+searchFormButton.addEventListener('click', () => {
+    searchFormClassList.add('is-active');
+});
 
-document.querySelector('[data-js-header-search]').addEventListener('submit', (event) => {
+searchFormCloseButton.addEventListener('click', () => {
+    searchFormClassList.remove('is-active');
+});
+
+searchForm.addEventListener('submit', (event) => {
     event.preventDefault();
-    console.log(`Search: ${event.target[1].value}`)
-    document.querySelector('[data-js-header-search]').classList.remove('is-active')
-})
+    const inputValue = event.target[1].value.trim();
+    console.log(`Search: ${inputValue}`);
+    searchFormClassList.remove('is-active');
+});
 
-document.querySelectorAll('[data-js-page-navigation-section] > h2').forEach((headerElement) => {
-    const headerId = headerElement.textContent.toLocaleLowerCase().replaceAll(" ", "-")
-    headerElement.parentElement.setAttribute('id', `${headerId}`)
-    document.querySelector('[data-js-page-navigation-nav] > ul').innerHTML += `
+// Page Navigation
+const pageNavigationHeaders = document.querySelectorAll('[data-js-page-navigation-section] > h2');
+const pageNavigation = document.querySelector('[data-js-page-navigation-nav] > ul');
+
+pageNavigationHeaders.forEach((headerElement) => {
+    const headerId = headerElement.textContent.toLocaleLowerCase().trim().replaceAll(" ", "-");
+    headerElement.parentElement.setAttribute('id', `${headerId}`);
+    pageNavigation.innerHTML += `
         <li><a href="#${headerId}">${headerElement.textContent}</a></li>
     `
-})
+});
