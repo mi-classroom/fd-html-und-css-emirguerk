@@ -20,8 +20,8 @@ main, header{
         padding: var(--spacing-l);
 }
 
-main{
-    max-width: var(--viewport-xl);
+article{
+    max-width: 50rem;
 }
 
 h1{
@@ -54,6 +54,10 @@ p{
 figure img{
     display: block;
     width: 100%;
+
+    li{
+        line-height: var(--line-height-normal);
+    }
 }
 
 section{
@@ -65,6 +69,7 @@ footer{
     background-color: var(--color-background-700);
     color: var(--color-background-default);
     padding: var(--spacing-l);
+    padding-top: var(--spacing-2xl);
 
     div:first-child{
         margin-top: var(--spacing-xl);
