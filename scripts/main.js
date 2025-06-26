@@ -40,6 +40,6 @@ pageNavigationHeaders.forEach((headerElement) => {
     const headerId = headerElement.textContent.toLocaleLowerCase().trim().replaceAll(" ", "-");
     headerElement.parentElement.setAttribute('id', `${headerId}`);
     pageNavigation.innerHTML += `
-        <li><a href="#${headerId}">${headerElement.textContent}</a></li>
+        <li class="page-navigation-container"><a class="page-navigation-item" href="#${headerId}">${headerElement.textContent}</a></li>
     `
 });

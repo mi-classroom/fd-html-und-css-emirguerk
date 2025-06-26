@@ -1,28 +1,28 @@
 /* overview-container */
 
 .overview-container{
-    border-left:var(--color-primary-default) solid var(--spacing-2xs);
-    background-color: var(--color-background-200);
     padding: var(--spacing-l);
+    border-left:var(--color-primary-default) solid var(--spacing-2xs);
     margin-bottom: var(--spacing-m);
+    background-color: var(--color-background-200);
 
     p{
         margin-bottom: 0;
     }
 
     ul{
-        list-style: outside;
         padding-left: var(--spacing-l);
+        list-style: outside;
     }
 
-    ul li{
+    ul .overview-content-list-item{
         line-height: var(--line-height-normal)
     }
 }
 
 .overview-container h4{
-    font-weight: var(--font-weight-regular);
     margin-bottom: var(--spacing-xs);
+    font-weight: var(--font-weight-regular);
 }
 
 /* overview-container */
@@ -30,11 +30,11 @@
 /* img-caption */
 
 .img-caption{
-    background-color: var(--color-background-200);
-    line-height: var(--line-height-normal);
     padding: var(--spacing-m);
-    font-size: var(--font-size-s);
     margin-bottom: var(--spacing-m);
+    background-color: var(--color-background-200);
+    font-size: var(--font-size-s);
+    line-height: var(--line-height-normal);
 }
 
 /* img-caption */
@@ -44,24 +44,24 @@
 .link-anker{
     margin-bottom: var(--spacing-m);
 
-    ul li{
+    .page-navigation-item{
+        color: var(--color-background-300);
+        font-size: var(--spacing-m);
+        text-decoration: none;
+    }
+
+    ul .page-navigation-container{
         padding: var(--spacing-xs);
         border-left: var(--color-background-300) solid var(--spacing-3xs);
     }
 
-    ul li:hover{
+    ul .page-navigation-container:hover{
         border-left: var(--color-primary-default) solid var(--spacing-3xs);
 
-        a{
+        .page-navigation-item{
             color: var(--color-text-default);
             cursor: pointer;
         }
-    }
-
-    a{
-        font-size: var(--spacing-m);
-        text-decoration: none;
-        color: var(--color-background-300);
     }
 }
 
@@ -71,10 +71,6 @@
 
 .custom-list{
     margin-bottom: var(--spacing-m);
-    dd:last-child{
-        border: none;
-        margin-bottom: var(--spacing-xl);
-    }
 
     dt{
     padding-top: var(--spacing-s);
@@ -88,6 +84,11 @@
     dt, dd{
         line-height: var(--line-height-normal);
     }
+
+    dd:last-child{
+        border: none;
+        margin-bottom: var(--spacing-xl);
+    }
 }
 
 /* custom-list */
@@ -95,19 +96,18 @@
 /* footer-navigation */
 
 .footer-navigation{
-
     h4{
-        font-weight: var(--font-weight-regular);
         margin-bottom: var(--spacing-m);
+        font-weight: var(--font-weight-regular);
     }
 
-    ul li{
+    .footer-navigation-container .footer-navigation-container-item{
         margin-bottom: var(--spacing-s);
 
-        a{
-            text-decoration: none;
+        .footer-navigation-anker{
             color: var(--color-background-default);
             font-weight: var(--font-weight-light);
+            text-decoration: none;
         }
     }
 }
@@ -118,11 +118,11 @@
 
 .footer-contact{
     h4{
-        font-weight: var(--font-weight-regular);
-        margin-bottom: var(--spacing-m); 
+        margin-bottom: var(--spacing-m);
+        font-weight: var(--font-weight-regular); 
     }
 
-    a{
+    .footer-contact-anker{
         color: var(--color-background-default);
     }
 }
@@ -132,17 +132,17 @@
 /* header-button */
 
 .header-button{
-    border: none;
     padding: var(--spacing-3xs);
+    border: none;
+    margin-left: var(--spacing-m);
     background-color: var(--color-background-default);
     cursor: pointer;
-    margin-left: var(--spacing-m);
 }
 
 .header-button:hover{
+    border-radius: 1rem;
     background-color: var(--color-background-200);
     transition: background-color 0.2s ease;
-    border-radius: 1rem;
 }
 
 /* header-button */
@@ -155,10 +155,10 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: var(--color-background-default);
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    background-color: var(--color-background-default);
 
     &.is-active{
         display: flex;
@@ -174,17 +174,17 @@
 
 .header-overlay-contnet-container{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
     > li{
-        text-align: center;
-        width: 100%;
-        border-bottom: var(--spacing-3xs) solid var(--color-primary-default);
         display: flex;
+        width: 100%;
         flex-direction: column;
+        border-bottom: var(--spacing-3xs) solid var(--color-primary-default);
+        text-align: center;
 
         > a, ul > li{
             padding-top: var(--spacing-m);
@@ -193,9 +193,9 @@
 
         a{
             color: var(--color-text-default);
-            text-decoration: none;
             font-size: var(--font-size-l);
             font-weight: var(--font-weight-light);
+            text-decoration: none;
         }
 
         > a{
@@ -212,9 +212,9 @@
     display: flex;
 
     input{
-        font-size: var(--font-size-l);
         border: none;
         border-bottom: var(--spacing-4xs) solid var(--color-text-default);
+        font-size: var(--font-size-l);
     }
 
     input:focus{
@@ -231,20 +231,20 @@ body:has(.header-overlay.is-active) {
 /* form-button */
 
 .form-button{
-    margin-left: var(--spacing-xs);
-    color: var(--color-background-default);
-    background-color: var(--color-primary-default);
-    font-size: var(--font-size-l);
-    border: none;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     padding: var(--spacing-xs);
+    border: none;
+    margin-left: var(--spacing-xs);
+    background-color: var(--color-primary-default);
+    color: var(--color-background-default);
     cursor: pointer;
+    font-size: var(--font-size-l);
 
     .icon{
-        color: var(--color-background-default);
         margin-right: var(--spacing-4xs);
+        color: var(--color-background-default);
         font-size: var(--font-size-xl)
     }
 }

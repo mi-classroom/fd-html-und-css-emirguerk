@@ -1,6 +1,7 @@
 header{
     display: flex;
     justify-content: space-between;
+
     nav, form{
         display: none;
     }
@@ -11,9 +12,9 @@ html, body{
 }
 
 body{
+    background-color: var(--color-background-default);
     font-family: var(--font-family-primary);
     font-weight: var(--font-weight-light);
-    background-color: var(--color-background-default);
 }
 
 main, header{
@@ -25,15 +26,15 @@ article{
 }
 
 h1{
+    margin-bottom: var(--spacing-m);
     font-size: var(--font-size-2xl);
     line-height: var(--line-height-tight);
-    margin-bottom: var(--spacing-m);
 }
 
 h2{
+    margin-bottom: var(--spacing-m);
     font-size: var(--font-size-xl);
     line-height: var(--line-height-tight);
-    margin-bottom: var(--spacing-m);
 }
 
 h3{
@@ -45,10 +46,10 @@ h1, h3, dt{
 }
 
 p{
+    margin-bottom: var(--spacing-m);
+    font-size: var(--font-size-m);
     font-weight: var(--font-weight-light);
     line-height: var(--line-height-normal);
-    font-size: var(--font-size-m);
-    margin-bottom: var(--spacing-m);
 }
 
 figure img{
@@ -66,20 +67,20 @@ section{
 }
 
 footer{
-    background-color: var(--color-background-700);
-    color: var(--color-background-default);
     padding: var(--spacing-l);
     padding-top: var(--spacing-2xl);
-
-    div:first-child{
-        margin-top: var(--spacing-xl);
-    }
+    background-color: var(--color-background-700);
+    color: var(--color-background-default);
 
     div, nav{
         margin-bottom: var(--spacing-2xl);
     }
 
-        div:last-child{
+    div:first-child{
+        margin-top: var(--spacing-xl);
+    }
+
+    div:last-child{
         margin-bottom: 0;
     }
 }

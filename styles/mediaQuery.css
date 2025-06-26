@@ -1,6 +1,6 @@
   /* TODO: noch keine schöne lösung muss noch gemacht werden */
 
-@media screen and (min-width: 768px) {
+@media screen and (width >= 768px) {
     main{
         display: grid;
         grid-template-columns: 28.5% 1fr;
@@ -8,8 +8,8 @@
 
     footer{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: var(--spacing-l);
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
     .figure-with-caption{
@@ -18,16 +18,16 @@
 
     .figure-with-overview{
         display: flex;
-        max-height: 12rem;
         overflow: hidden;
+        max-height: 12rem;
         
         img{
             max-width: 12rem;
         }
 
         figcaption{
-            margin-bottom: 0;
             width: 100%;
+            margin-bottom: 0;
             overflow-y: scroll;
         }
 
@@ -52,7 +52,7 @@
         }
     }
 
-    footer{
+    .footer-container{
         div{
             min-width: 9rem;
         }
@@ -78,13 +78,13 @@
         ul{
             display: flex;
             width: 30rem;
-            justify-content: space-around;
             align-items: center;
+            justify-content: space-around;
             
             li{
                 display: flex;
-                justify-content: center;
                 align-items: center;
+                justify-content: center;
 
                 .icon-arrow-size{
                     padding-top: var(--spacing-2xs);
@@ -96,8 +96,8 @@
                 }
 
                 a{
-                    text-decoration: none;
                     color: var(--color-text-default);
+                    text-decoration: none;
                 }
             }
 

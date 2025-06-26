@@ -3,10 +3,11 @@
   width: auto;
   height: auto;
   margin-right: var(--size-xxs);
+  color: var(--color-primary-default);
   direction: ltr;
-  font-family: material-icons;
-  font-size: var(--font-size-2xl);
+  font-family: material-icons, sans-serif;
   font-feature-settings: 'liga';
+  font-size: var(--font-size-2xl);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-style: normal;
@@ -18,5 +19,4 @@
   vertical-align: middle;
   white-space: nowrap;
   word-wrap: normal;
-  color: var(--color-primary-default);
 }
