@@ -2,7 +2,10 @@
     "name": "webdev-fd",
     "version": "1.0.0",
     "description": "Web development project",
-    "scripts": {},
+    "scripts": {
+      "lint": "stylelint styles/**/*.css",
+      "lint:fix": "stylelint styles/**/*.css --fix"
+    },
     "devDependencies": {
         "stylelint": "^15.11.0",
         "stylelint-config-idiomatic-order": "^9.0.0",
