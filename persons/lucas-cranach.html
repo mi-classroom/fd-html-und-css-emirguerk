@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../styles/variables.css">
     <link rel="stylesheet" href="../styles/basic.css">
     <link rel="stylesheet" href="../styles/components.css">
+    <link rel="stylesheet" href="../styles/mediaQuery.css">
 </head>
 
 <body>
@@ -76,9 +77,8 @@
             <ul></ul>
         </nav>
 
-        <h1>Biografien von Lucas Cranach</h1>
-
         <article>
+            <h1>Biografien von Lucas Cranach</h1>
 
             <section data-js-page-navigation-section>
                 <h2>Lucas Cranach der Ältere</h2>
@@ -115,7 +115,7 @@
                     er sich eine große Werkstatt ein, die sich zunächst im Wittenberger Schloss und später in der Stadt
                     befand.</p>
 
-                <figure>
+                <figure class="figure-with-caption">
                     <img src="../assets/images/lucas-cranach-1.jpg" alt="lucas-cranach">
                     <figcaption class="img-caption">​Lucas Cranach der Ältere, Die Heilige Sippe, um 1509/10. Lindenholztafel. Wien,
                         Gemäldegalerie der Akademie der bildenden Künste. Detail mit dem Selbstbildnis des Künstlers.
@@ -149,7 +149,7 @@
                     Sohnes Hans, änderte Cranach die Werkstattsignatur: Die Schlange wurde nicht mehr mit aufrecht
                     stehenden sondern mit liegenden Flügeln dargestellt.</p>
 
-                <figure>
+                <figure class="figure-with-caption">
                     <img src="../assets/images/lucas-cranach-2.jpg" alt="lucas-cranach">
                     <figcaption class="img-caption">Lucas Cranach der Ältere, Selbstbildnis, 1531. Holztafel. Schloss Stolzenfels. Detail
                     </figcaption>
@@ -234,16 +234,18 @@
             <section data-js-page-navigation-section>
                 <h2>Hans Cranach</h2>
 
-                <figure>
+                <figure class="figure-with-overview">
                     <img src="../assets/images/hans-cranach.jpg" alt="hans-cranach">
                     <figcaption class="overview-container">
-                        <h4>Kurzüberblick</h4>
-                        <ul>
-                            <li>Geboren ca. 1513 in Wittenberg als Sohn von Lucas Cranach</li>
-                            <li>Ausbildung in der Werkstatt des Vaters, erste Werke ab 1534 signiert</li>
-                            <li>Tätig für das sächsische Herrscherhaus, Studienreise nach Italien 1537</li>
-                            <li>Verstarb 1537 in Bologna</li>
-                        </ul>
+                        <div arial-label="overview-content">
+                            <h4>Kurzüberblick</h4>
+                            <ul>
+                                <li>Geboren ca. 1513 in Wittenberg als Sohn von Lucas Cranach</li>
+                                <li>Ausbildung in der Werkstatt des Vaters, erste Werke ab 1534 signiert</li>
+                                <li>Tätig für das sächsische Herrscherhaus, Studienreise nach Italien 1537</li>
+                                <li>Verstarb 1537 in Bologna</li>
+                            </ul>
+                        </div>
                     </figcaption>
                 </figure>
 
@@ -295,16 +297,18 @@
             <section data-js-page-navigation-section>
                 <h2>Lucas Cranach der Jüngere</h2>
 
-                <figure>
+                <figure class="figure-with-overview">
                     <img src="../assets/images/lucas-cranach-der-juengere.jpg" alt="lucas-cranach-der-juengere">
                     <figcaption class="overview-container">
-                        <h4>Kurzüberblick</h4>
-                        <ul>
-                            <li>Geboren 1515 in Wittenberg als Sohn von Lucas Cranach d. Ä.</li>
-                            <li>Ausbildung in der väterlichen Werkstatt, erste Erwähnung 1535</li>
-                            <li>Verheiratet, Vater von neun Kindern, erfolgreicher Künstler und Politiker</li>
-                            <li>Bürgermeister von Wittenberg (1565 – 67), starb 1586 in seiner Heimatstadt</li>
-                        </ul>
+                        <div arial-label="overview-content">
+                            <h4>Kurzüberblick</h4>
+                            <ul>
+                                <li>Geboren 1515 in Wittenberg als Sohn von Lucas Cranach d. Ä.</li>
+                                <li>Ausbildung in der väterlichen Werkstatt, erste Erwähnung 1535</li>
+                                <li>Verheiratet, Vater von neun Kindern, erfolgreicher Künstler und Politiker</li>
+                                <li>Bürgermeister von Wittenberg (1565 – 67), starb 1586 in seiner Heimatstadt</li>
+                            </ul>
+                        </div>
                     </figcaption>
                 </figure>
 
@@ -352,13 +356,13 @@
                         Schlangensignet zwischen Initialen "HC"</dd>
                 </dl>
 
-                <figure>
+                <figure class="figure-with-caption">
                     <img src="../assets/images/lucas-cranach-3.jpg" alt="lucas-cranach">
                     <figcaption class="img-caption">Lucas Cranach der Jüngere, Epitaphaltar in der Stadtkirche St. Peter und Paul in Weimar,
                         1555. Mitteltafel, Detail mit dem Bildnis Lucas Cranachs d. Ä.</figcaption>
                 </figure>
 
-                <figure>
+                <figure class="figure-with-caption">
                     <img src="../assets/images/lucas-cranach-der-juengere.jpg" alt="lucas-cranach-der-juengere">
                     <figcaption class="img-caption">Lucas Cranach der Jüngere, Epitaph für Fürst Joachim von Anhalt, 1565. Holztafel, St.
                         Johannis und St. Marien, Dessau. Detail mit vermutlichem Selbstbildnis Lucas Cranachs d. J.

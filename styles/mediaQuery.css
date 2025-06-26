@@ -1,0 +1,64 @@
+  /* viewport sizes
+
+  --viewport-xs: 320px;
+  --viewport-s: 375px;
+  --viewport-m: 768px;
+  --viewport-l: 1024px;
+  --viewport-xl: 1440px;
+
+*/
+
+@media screen and (min-width: 768px) {
+    main{
+        display: grid;
+        grid-template-columns: 30% 1fr;
+    }
+
+    .figure-with-caption{
+        max-width: 23rem;
+    }
+
+    .figure-with-overview{
+        display: flex;
+        max-height: 11rem;
+        overflow: hidden;
+        
+        img{
+            max-width: 11rem;
+        }
+
+        figcaption{
+            margin-bottom: 0;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            overflow-y: scroll;
+
+            ul li:last{
+                padding-bottom: var(--spacing-l);
+            }
+        }
+
+        figcaption::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    .custom-list{
+        display: grid;
+        grid-template-columns: 20% 1fr;
+
+        dt, dd{
+            padding: 0;
+            padding-top: var(--spacing-s);
+            padding-bottom: var(--spacing-s);
+            border-bottom: var(--spacing-4xs) solid var( --color-background-300);
+        }
+
+        :nth-last-child(2){
+            border: none;
+        }
+    }
+}

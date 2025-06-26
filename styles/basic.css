@@ -20,6 +20,10 @@ main, header{
         padding: var(--spacing-l);
 }
 
+main{
+    max-width: var(--viewport-xl);
+}
+
 h1{
     font-size: var(--font-size-2xl);
     line-height: var(--line-height-tight);
