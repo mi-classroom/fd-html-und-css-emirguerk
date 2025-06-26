@@ -69,4 +69,11 @@
   --break-point-s: 768px;
   --break-point-m: 1024px;
   --breapoint-l: 1200px;
+
+  /* viewport sizes */
+  --viewport-xs: 320px;
+  --viewport-s: 375px;
+  --viewport-m: 768px;
+  --viewport-l: 1024px;
+  --viewport-xl: 1440px;
 } 
