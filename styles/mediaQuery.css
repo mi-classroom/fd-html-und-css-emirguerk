@@ -1,12 +1,4 @@
-  /* viewport sizes
-
-  --viewport-xs: 320px;
-  --viewport-s: 375px;
-  --viewport-m: 768px;
-  --viewport-l: 1024px;
-  --viewport-xl: 1440px;
-
-*/
+  /* TODO: noch keine schöne lösung muss noch gemacht werden */
 
 @media screen and (min-width: 768px) {
     main{
@@ -72,6 +64,46 @@
         div:last-child{
             max-width: 18rem;
             text-wrap: nowrap;
+        }
+    }
+
+    .header-anker-links{
+        display: block;
+    }
+
+    .header-actions-container{
+        display: flex;
+        align-items: center;
+
+        ul{
+            display: flex;
+            width: 30rem;
+            justify-content: space-around;
+            align-items: center;
+            
+            li{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .icon-arrow-size{
+                    padding-top: var(--spacing-2xs);
+                    font-size: var(--spacing-l);
+                }
+
+                .icon-arrow-size:hover{
+                    cursor: pointer;
+                }
+
+                a{
+                    text-decoration: none;
+                    color: var(--color-text-default);
+                }
+            }
+
+            li ul{
+                display: none;
+            }
         }
     }
 }
