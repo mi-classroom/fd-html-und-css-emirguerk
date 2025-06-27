@@ -3,6 +3,16 @@
     border-left: 0.25rem solid #FEB701;
     margin-bottom: 1rem;
     background-color: #F2F2F2;
+
+    ul{
+        padding: 0 1.5rem;
+        list-style: outside;
+    }
+
+    ul li{
+        margin-bottom: 0.25rem;
+        line-height: 130%;
+    }
 }
 
 .figure-with-caption{
