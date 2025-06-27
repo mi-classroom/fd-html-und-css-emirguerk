@@ -1,0 +1,33 @@
+.overview-container{
+    padding: 1.5rem;
+    border-left: 0.25rem solid #FEB701;
+    margin-bottom: 1rem;
+    background-color: #F2F2F2;
+}
+
+.figure-with-caption{
+    padding: 1.5rem;
+    background-color: #F2F2F2;
+}
+
+.custom-list{
+    margin-bottom: 3rem;
+
+    dt, dd{
+        line-height: 130%;
+    }
+
+    dt{
+        padding-top: 1rem;
+        font-weight: 400;
+    }
+    
+    dd{
+        padding-bottom: 1rem;
+        border-bottom: 0.1rem solid #B4B4B4;
+    }
+
+    dd:last-child{
+        border-bottom: none
+    }
+}
