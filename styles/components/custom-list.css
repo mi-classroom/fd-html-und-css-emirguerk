@@ -1,0 +1,21 @@
+.custom-list{
+    margin-bottom: 3rem;
+
+    dt, dd{
+        line-height: 130%;
+    }
+
+    dt{
+        padding-top: 1rem;
+        font-weight: 400;
+    }
+    
+    dd{
+        padding-bottom: 1rem;
+        border-bottom: 0.1rem solid #B4B4B4;
+    }
+
+    dd:last-child{
+        border-bottom: none
+    }
+}

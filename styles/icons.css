@@ -2,12 +2,11 @@
   display: inline-block;
   width: auto;
   height: auto;
-  margin-right: var(--size-xxs);
-  color: var(--color-primary-default);
+  color: #FEB701;
   direction: ltr;
   font-family: material-icons, sans-serif;
   font-feature-settings: 'liga';
-  font-size: var(--font-size-2xl);
+  font-size: 1.5rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-style: normal;

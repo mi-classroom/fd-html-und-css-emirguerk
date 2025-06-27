@@ -10,11 +10,16 @@
     <link rel="stylesheet" href="../styles/fonts.css">
     <link rel="stylesheet" href="../styles/icons.css">
     <link rel="stylesheet" href="../styles/basic.css">
-    <link rel="stylesheet" href="../styles/pages/lucas-cranach.css">
+    <link rel="stylesheet" href="../styles/components/custom-list.css">
+    <link rel="stylesheet" href="../styles/components/figure-with-caption.css">
+    <link rel="stylesheet" href="../styles/components/footer-container.css">
+    <link rel="stylesheet" href="../styles/components/overview-container.css">
+    <link rel="stylesheet" href="../styles/components/header-container.css">
+    <link rel="stylesheet" href="../styles/components/icon-button.css">
 </head>
 
 <body>
-    <header>
+    <header class="header-container">
         <div>
             <img src="../assets/images/cda-logo.svg" alt="cda-logo">
         </div>
@@ -44,17 +49,17 @@
                     <li><a href="">Aktuelles</a></li>
                 </ul>
             </nav>
-            <button type="button">
+            <button type="button" class="icon-button">
                 <span class="icon">search</span>
             </button>
-            <button type="button">
+            <button type="button" class="icon-button">
                 <span class="icon">menu</span>
             </button>
         </div>
 
         <form action="/persons/lucas-cranach.html">
             <div>
-                <button type="button">
+                <button type="button" class="icon-button">
                     <span class="icon">close</span>
                 </button>
             </div>
@@ -62,7 +67,7 @@
                 <label for="search"></label>
                 <input type="text" id="search" placeholder="Suchwort eingeben">
 
-                <button type="submit"><span class="icon">search</span>Search</button>
+                <button type="submit" class="icon-button"><span class="icon">search</span>Search</button>
             </div>
         </form>
 
@@ -395,7 +400,7 @@
             </section>
         </article>
     </main>
-    <footer>
+    <footer class="footer-container">
         <div>
             <img src="../assets/images/cda-logo.svg" alt="cda-logo">
         </div>

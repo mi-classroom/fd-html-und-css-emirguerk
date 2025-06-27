@@ -1,9 +1,4 @@
-header, footer{
-    display: none;
-}
-
 body{
-    padding: 1.5rem;
     font-family: var(--font-family-primary);
     font-size: 1rem;
     font-weight: 300;
@@ -35,4 +30,19 @@ h2, h3{
 
 h2{
     font-size: 1.5rem;
+}
+
+article, footer, header{
+    padding: 1.5rem;
+}
+
+footer{
+    padding-top: 4rem;
+    background-color: #222;
+}
+
+header{
+    nav, form{
+        display: none;
+    }
 }
