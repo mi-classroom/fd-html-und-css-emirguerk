@@ -1,114 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
     <meta charset="UTF-8">
     <title>Lucas Cranach</title>
 
     <link rel="stylesheet" href="../styles/reset.css">
-    <link rel="stylesheet" href="../styles/icons.css">
-    <link rel="stylesheet" href="../styles/font.css">
     <link rel="stylesheet" href="../styles/variables.css">
+    <link rel="stylesheet" href="../styles/fonts.css">
+    <link rel="stylesheet" href="../styles/icons.css">
     <link rel="stylesheet" href="../styles/basic.css">
-    <link rel="stylesheet" href="../styles/components.css">
-    <link rel="stylesheet" href="../styles/mediaQuery.css">
+    <link rel="stylesheet" href="../styles/components/custom-list.css">
+    <link rel="stylesheet" href="../styles/components/figure-with-caption.css">
+    <link rel="stylesheet" href="../styles/components/footer-container.css">
+    <link rel="stylesheet" href="../styles/components/overview-container.css">
+    <link rel="stylesheet" href="../styles/components/header-container.css">
+    <link rel="stylesheet" href="../styles/components/icon-button.css">
+    <link rel="stylesheet" href="../styles/components/search-form.css">
+    <link rel="stylesheet" href="../styles/components/navigation-container.css">
+    <link rel="stylesheet" href="../styles/components/page-navigation-container.css">
+    <link rel="stylesheet" href="../styles/components/lucas-cranach-page.css">
+
+    <script src="/assets/components/main-header.js"></script>
+    <script src="/assets/components/main-footer.js"></script>
 </head>
 
 <body>
-    <header>
-        <div>
-            <img src="../assets/images/cda-logo.svg" alt="cda-logo">
-        </div>
-        <div class="header-actions-container">
-            <nav class="header-anker-links">
-                <ul>
-                    <li>
-                        <a href="">Archiv</a>
-                        <span class="icon icon-arrow-size">keyboard_arrow_down</span>
-                        <ul>
-                            <li><a href="">Alle Werke</a></li>
-                            <li><a href="">Gemälde</a></li>
-                            <li><a href="">Archivalien</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="">Personen</a>
-                        <span class="icon icon-arrow-size">keyboard_arrow_down</span>
-                        <ul>
-                            <li><a href="">Lucas Cranach</a></li>
-                            <li><a href="">Martin Luther</a></li>
-                            <li><a href="">Über uns</a></li>
-                            <li><a href="">Partner</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="">Forschung</a></li>
-                    <li><a href="">Aktuelles</a></li>
-                </ul>
-            </nav>
-            <button type="button" class="header-button" data-js-searach-button>
-                <span class="icon">search</span>
-            </button>
-            <button type="button" class="header-button" data-js-menu-button>
-                <span class="icon">menu</span>
-            </button>
-        </div>
-
-        <form action="/persons/lucas-cranach.html" class="header-overlay" data-js-header-search>
-            <div class="header-close-container">
-                <button type="button" class="header-button" data-js-close-button>
-                    <span class="icon">close</span>
-                </button>
-            </div>
-            <div class="header-search-form">
-                <label for="search"></label>
-                <input type="text" id="search" placeholder="Suchwort eingeben">
-
-                <button type="submit" class="form-button"><span class="icon white-color-icon">search</span>Search</button>
-            </div>
-        </form>
-
-        <nav class="header-overlay" data-js-header-nav>
-            <div class="header-close-container">
-                <button type="button" class="header-button" data-js-close-button>
-                    <span class="icon">close</span>
-                </button>
-            </div>
-            <ul class="header-overlay-contnet-container">
-                <li>
-                    <a href="">Archiv</a>
-                    <ul>
-                        <li><a href="">Alle Werke</a></li>
-                        <li><a href="">Gemälde</a></li>
-                        <li><a href="">Archivalien</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="">Personen</a>
-                    <ul>
-                        <li><a href="">Lucas Cranach</a></li>
-                        <li><a href="">Martin Luther</a></li>
-                        <li><a href="">Über uns</a></li>
-                        <li><a href="">Partner</a></li>
-                    </ul>
-                </li>
-                <li><a href="">Forschung</a></li>
-                <li><a href="">Aktuelles</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <nav class="link-anker" data-js-page-navigation-nav>
+    <main-header />
+    <main class="lucas-cranach-page">
+        <nav class="page-navigation-container">
             <h2>Inhalt</h2>
-            <ul></ul>
+            <ul>
+                <li><a href="#lucas-cranach-der-aeltere">Lucas Cranach der Ältere</a></li>
+                <li><a href="#hans-cranach">Hans Cranach</a></li>
+                <li><a href="#lucas-cranach-der-juengere">Lucas Cranach der Jüngere</a></li>
+            </ul>
         </nav>
 
         <article>
             <h1>Biografien von Lucas Cranach</h1>
 
-            <section data-js-page-navigation-section>
+            <section id="lucas-cranach-der-aeltere">
                 <h2>Lucas Cranach der Ältere</h2>
                 <div class="overview-container">
-                    <h4>Kurzüberlick</h4>
+                    <h3>Kurzüberlick</h3>
                     <p>Lucas Cranach der Ältere (1472 – 1553) war ein einflussreicher Maler, Drucker und Unternehmer der
                         Renaissance. Als Hofmaler der sächsischen Kurfürsten prägte er die Reformation visuell und
                         leitete eine produktive Werkstatt. Seine Werke umfassen Porträts, religiöse und mythologische
@@ -140,9 +75,10 @@
                     er sich eine große Werkstatt ein, die sich zunächst im Wittenberger Schloss und später in der Stadt
                     befand.</p>
 
-                <figure class="figure-with-caption">
+                <figure>
                     <img src="../assets/images/lucas-cranach-1.jpg" alt="lucas-cranach">
-                    <figcaption class="img-caption">​Lucas Cranach der Ältere, Die Heilige Sippe, um 1509/10. Lindenholztafel. Wien,
+                    <figcaption class="figure-with-caption">​Lucas Cranach der Ältere, Die Heilige Sippe, um 1509/10.
+                        Lindenholztafel. Wien,
                         Gemäldegalerie der Akademie der bildenden Künste. Detail mit dem Selbstbildnis des Künstlers.
                     </figcaption>
                 </figure>
@@ -174,9 +110,10 @@
                     Sohnes Hans, änderte Cranach die Werkstattsignatur: Die Schlange wurde nicht mehr mit aufrecht
                     stehenden sondern mit liegenden Flügeln dargestellt.</p>
 
-                <figure class="figure-with-caption">
+                <figure>
                     <img src="../assets/images/lucas-cranach-2.jpg" alt="lucas-cranach">
-                    <figcaption class="img-caption">Lucas Cranach der Ältere, Selbstbildnis, 1531. Holztafel. Schloss Stolzenfels. Detail
+                    <figcaption class="figure-with-caption">Lucas Cranach der Ältere, Selbstbildnis, 1531. Holztafel.
+                        Schloss Stolzenfels. Detail
                     </figcaption>
                 </figure>
 
@@ -256,21 +193,19 @@
                 </dl>
             </section>
 
-            <section data-js-page-navigation-section>
+            <section id="hans-cranach">
                 <h2>Hans Cranach</h2>
 
-                <figure class="figure-with-overview">
+                <figure>
                     <img src="../assets/images/hans-cranach.jpg" alt="hans-cranach">
-                    <figcaption class="overview-container">
-                        <div arial-label="overview-content">
-                            <h4>Kurzüberblick</h4>
-                            <ul>
-                                <li class="overview-content-list-item">Geboren ca. 1513 in Wittenberg als Sohn von Lucas Cranach</li>
-                                <li class="overview-content-list-item">Ausbildung in der Werkstatt des Vaters, erste Werke ab 1534 signiert</li>
-                                <li class="overview-content-list-item">Tätig für das sächsische Herrscherhaus, Studienreise nach Italien 1537</li>
-                                <li class="overview-content-list-item">Verstarb 1537 in Bologna</li>
-                            </ul>
-                        </div>
+                    <figcaption class="figure-with-caption overview-container">
+                        <h3>Kurzüberblick</h3>
+                        <ul>
+                            <li>Geboren ca. 1513 in Wittenberg als Sohn von Lucas Cranach</li>
+                            <li>Ausbildung in der Werkstatt des Vaters, erste Werke ab 1534 signiert</li>
+                            <li>Tätig für das sächsische Herrscherhaus, Studienreise nach Italien 1537</li>
+                            <li>Verstarb 1537 in Bologna</li>
+                        </ul>
                     </figcaption>
                 </figure>
 
@@ -319,21 +254,19 @@
                 </dl>
             </section>
 
-            <section data-js-page-navigation-section>
+            <section id="lucas-cranach-der-juengere">
                 <h2>Lucas Cranach der Jüngere</h2>
 
-                <figure class="figure-with-overview">
+                <figure>
                     <img src="../assets/images/lucas-cranach-der-juengere.jpg" alt="lucas-cranach-der-juengere">
-                    <figcaption class="overview-container">
-                        <div arial-label="overview-content">
-                            <h4>Kurzüberblick</h4>
-                            <ul>
-                                <li class="overview-content-list-item">Geboren 1515 in Wittenberg als Sohn von Lucas Cranach d. Ä.</li>
-                                <li class="overview-content-list-item">Ausbildung in der väterlichen Werkstatt, erste Erwähnung 1535</li>
-                                <li class="overview-content-list-item">Verheiratet, Vater von neun Kindern, erfolgreicher Künstler und Politiker</li>
-                                <li class="overview-content-list-item">Bürgermeister von Wittenberg (1565 – 67), starb 1586 in seiner Heimatstadt</li>
-                            </ul>
-                        </div>
+                    <figcaption class="figure-with-caption overview-container">
+                        <h3>Kurzüberblick</h3>
+                        <ul>
+                            <li>Geboren 1515 in Wittenberg als Sohn von Lucas Cranach d. Ä.</li>
+                            <li>Ausbildung in der väterlichen Werkstatt, erste Erwähnung 1535</li>
+                            <li>Verheiratet, Vater von neun Kindern, erfolgreicher Künstler und Politiker</li>
+                            <li>Bürgermeister von Wittenberg (1565 – 67), starb 1586 in seiner Heimatstadt</li>
+                        </ul>
                     </figcaption>
                 </figure>
 
@@ -381,64 +314,27 @@
                         Schlangensignet zwischen Initialen "HC"</dd>
                 </dl>
 
-                <figure class="figure-with-caption">
+                <figure>
                     <img src="../assets/images/lucas-cranach-3.jpg" alt="lucas-cranach">
-                    <figcaption class="img-caption">Lucas Cranach der Jüngere, Epitaphaltar in der Stadtkirche St. Peter und Paul in Weimar,
+                    <figcaption class="figure-with-caption">Lucas Cranach der Jüngere, Epitaphaltar in der Stadtkirche
+                        St. Peter und Paul in Weimar,
                         1555. Mitteltafel, Detail mit dem Bildnis Lucas Cranachs d. Ä.</figcaption>
                 </figure>
 
-                <figure class="figure-with-caption">
+                <figure>
                     <img src="../assets/images/lucas-cranach-der-juengere.jpg" alt="lucas-cranach-der-juengere">
-                    <figcaption class="img-caption">Lucas Cranach der Jüngere, Epitaph für Fürst Joachim von Anhalt, 1565. Holztafel, St.
+                    <figcaption class="figure-with-caption">Lucas Cranach der Jüngere, Epitaph für Fürst Joachim von
+                        Anhalt, 1565. Holztafel, St.
                         Johannis und St. Marien, Dessau. Detail mit vermutlichem Selbstbildnis Lucas Cranachs d. J.
                     </figcaption>
                 </figure>
             </section>
         </article>
     </main>
-    <footer class="footer-container">
-        <div>
-            <img src="../assets/images/cda-logo.svg" alt="cda-logo">
-        </div>
+    <main-footer />
 
-        <div class="footer-navigation">
-            <h4>Allgemeines</h4>
-            <ul class="footer-navigation-container">
-                <li class="footer-navigation-container-item"><a href="" class="footer-navigation-anker">Impressum</a></li>
-                <li class="footer-navigation-container-item"><a href="" class="footer-navigation-anker">Leitfaden</a></li>
-                <li class="footer-navigation-container-item"><a href="" class="footer-navigation-anker">Nutzungsbedingungen</a></li>
-                <li class="footer-navigation-container-item"><a href="" class="footer-navigation-anker">FAQ</a></li>
-            </ul>
-        </div>
-        <div class="footer-navigation">
-            <h4>Entdecken</h4>
-            <ul class="footer-navigation-container">
-                <li class="footer-navigation-container-item"><a href="" class="footer-navigation-anker">Lucas Cranach</a></li>
-                <li class="footer-navigation-container-item"><a href="" class="footer-navigation-anker">Luther</a></li>
-                <li class="footer-navigation-container-item"><a href="" class="footer-navigation-anker">Über uns</a></li>
-                <li class="footer-navigation-container-item"><a href="" class="footer-navigation-anker">Aktuelles</a></li>
-                <li class="footer-navigation-container-item"><a href="" class="footer-navigation-anker">Partner</a></li>
-                <li class="footer-navigation-container-item"><a href="" class="footer-navigation-anker">Forschung</a></li>
-            </ul>
-        </div>
-
-        <div class="footer-contact">
-            <h4>Kontakt</h4>
-            <p>Haben Sie Fragen oder Anregungen? Kontaktieren Sie uns ganz einfach über folgenden Link:</p>
-            <a href="" class="footer-contact-anker">Zum Kontaktformular</a>
-        </div>
-
-        <div>
-            <p>Stiftung Museum Kunstpalast, Düsseldorf / Technische Hochschule Köln, 2025</p>
-        </div>
-    </footer>
-
-
-    <!--scripts-->
-
-    <script src="../scripts/main.js" defer></script>
-
-    <!--scripts-->
+    <script src="../scripts/navigation.js" defer></script>
+    <script src="../scripts/search.js" defer></script>
 </body>
 
 </html>

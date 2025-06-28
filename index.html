@@ -1,10 +1,69 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <title>Cranach Digital Archive</title>
+
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/variables.css">
+    <link rel="stylesheet" href="./styles/fonts.css">
+    <link rel="stylesheet" href="./styles/icons.css">
+    <link rel="stylesheet" href="./styles/basic.css">
+    <link rel="stylesheet" href="./styles/components/custom-list.css">
+    <link rel="stylesheet" href="./styles/components/figure-with-caption.css">
+    <link rel="stylesheet" href="./styles/components/footer-container.css">
+    <link rel="stylesheet" href="./styles/components/overview-container.css">
+    <link rel="stylesheet" href="./styles/components/header-container.css">
+    <link rel="stylesheet" href="./styles/components/icon-button.css">
+    <link rel="stylesheet" href="./styles/components/search-form.css">
+    <link rel="stylesheet" href="./styles/components/navigation-container.css">
+    <link rel="stylesheet" href="./styles/components/opener-section-container.css">
+    <link rel="stylesheet" href="./styles/components/intro-text.css">
+    <link rel="stylesheet" href="./styles/components/slides-show-carusell.css">
+
+    <script src="./assets/components/main-header.js"></script>
+    <script src="./assets/components/main-footer.js"></script>
 </head>
+
 <body>
-    
+    <main-header />
+    <main>
+        <section class="opener-section-container">
+            <h1>Discover the work of Lucas Cranach</h1>
+            <img src="./assets/images/cranach-opener.webp" alt="Work of Lucas Cranach">
+        </section>
+        <div class="intro-text" aria-label="intro-text">
+            <p>Das Cranach Digital Archive (CDA) ist ein internationales Forschungsprojekt, das sich der
+                Dokumentation und Erforschung der Werke von Lucas Cranach d. Ä. (1472–1553) und seiner Werkstatt
+                widmet. Es bietet eine umfassende digitale Sammlung hochauflösender Bilder, wissenschaftlicher
+                Analysen und historischer Dokumente zu seinen Gemälden. Ziel ist es, Kunsthistorikern, Restauratoren
+                und der Öffentlichkeit einen zentralen Zugang zu detaillierten Informationen über Cranachs Werke zu
+                ermöglichen und den Austausch wissenschaftlicher Erkenntnisse zu fördern. </p>
+        </div>
+        <figure class="slides-show-carusell">
+            <div class="carusell-button-container">
+                <button type="button" class="icon-button"><span class="icon">chevron_right</span></button>
+            </div>
+            <div class="carusell-image-container" data-js-img-container></div>
+            
+            <figcaption data-js-caption></figcaption>
+            <div class="carusell-button-container">
+                <button type="button" class="icon-button"><span class="icon">chevron_left</span></button>
+            </div>
+
+            <div class="carusell-navigation">
+                <div id="active-carusell" data-js-active-carusell></div>
+                <div data-js-active-carusell></div>
+                <div data-js-active-carusell></div>
+            </div>
+        </figure>
+    </main>
+    <main-footer />
+
+    <script src="./scripts/navigation.js" defer></script>
+    <script src="./scripts/search.js" defer></script>
+    <script src="./scripts/carusell.js" defer></script>
 </body>
+
 </html>

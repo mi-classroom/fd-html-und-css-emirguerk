@@ -1,0 +1,44 @@
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    color: #FFF;
+    gap: 2rem;
+
+    a{
+        color: #FFF;
+    }
+    
+    div a, div p{
+        opacity: 0.75;
+    }
+
+    div ul li{
+        padding-bottom: 0.5rem;
+
+        a{
+            text-decoration: none;
+        }
+    }
+
+    div a:hover{
+        font-weight: 400;
+        opacity: 1;
+        transition: opacity 250ms ease, font-weight 250ms ease;
+    }
+
+    div img{
+        width: auto;
+    }
+}
+
+@media (width >= 768px){
+    .footer-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+        div:last-child > p{
+            max-width: 1rem;
+            text-wrap: nowrap;
+        }
+    }
+}
