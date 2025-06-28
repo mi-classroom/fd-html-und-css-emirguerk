@@ -28,10 +28,10 @@
             <img src="../assets/images/cda-logo.svg" alt="cda-logo">
         </div>
         <div>
-            <button type="button" class="icon-button">
+            <button type="button" class="icon-button" data-js-search-button>
                 <span class="icon">search</span>
             </button>
-            <button type="button" class="icon-button">
+            <button type="button" class="icon-button" data-js-navigation-button>
                 <span class="icon">menu</span>
             </button>
         </div>
@@ -83,16 +83,16 @@
         <nav class="page-navigation-container">
             <h2>Inhalt</h2>
             <ul>
-                <li><a href="#">Lucas Cranach der Ältere</a></li>
-                <li><a href="#">Hans Cranach</a></li>
-                <li><a href="#">Lucas Cranach der Jüngere</a></li>
+                <li><a href="#lucas-cranach-der-aeltere">Lucas Cranach der Ältere</a></li>
+                <li><a href="#hans-cranach">Hans Cranach</a></li>
+                <li><a href="#lucas-cranach-der-juengere">Lucas Cranach der Jüngere</a></li>
             </ul>
         </nav>
 
         <article>
             <h1>Biografien von Lucas Cranach</h1>
 
-            <section>
+            <section id="lucas-cranach-der-aeltere">
                 <h2>Lucas Cranach der Ältere</h2>
                 <div class="overview-container">
                     <h3>Kurzüberlick</h3>
@@ -245,7 +245,7 @@
                 </dl>
             </section>
 
-            <section>
+            <section id="hans-cranach">
                 <h2>Hans Cranach</h2>
 
                 <figure>
@@ -306,7 +306,7 @@
                 </dl>
             </section>
 
-            <section>
+            <section id="lucas-cranach-der-juengere">
                 <h2>Lucas Cranach der Jüngere</h2>
 
                 <figure>
@@ -419,6 +419,9 @@
             <p>Stiftung Museum Kunstpalast, Düsseldorf / Technische Hochschule Köln, 2025</p>
         </div>
     </footer>
+
+    <script src="../scripts/navigation.js" defer></script>
+    <script src="../scripts/search.js" defer></script>
 </body>
 
 </html>
