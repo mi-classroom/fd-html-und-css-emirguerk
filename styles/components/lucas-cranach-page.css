@@ -1,0 +1,40 @@
+.lucas-cranach-page{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+@media (width >= 768px) {
+    .lucas-cranach-page{
+        display: grid;
+        grid-template-columns: 30% 1fr;
+
+        article{
+            max-width: 80%;
+        }
+    }
+
+    figure:not(:has(.overview-container)){
+        max-width: 60%;
+    }
+
+    figure:has(.overview-container){
+        display: flex;
+        width: 100%;
+
+        img{
+            max-width: 12rem;
+            max-height: 12rem;
+        }
+
+        .overview-container{
+            max-height: 9rem;
+            padding-right: 0;
+            margin: 0;
+            overflow-y: scroll;
+
+            &::-webkit-scrollbar{
+                background-color: #F2F2F2;
+            }
+        }
+    }
+}
