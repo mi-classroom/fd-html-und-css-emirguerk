@@ -30,3 +30,15 @@
         width: auto;
     }
 }
+
+@media (width >= 768px){
+    .footer-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+        div:last-child > p{
+            max-width: 1rem;
+            text-wrap: nowrap;
+        }
+    }
+}
