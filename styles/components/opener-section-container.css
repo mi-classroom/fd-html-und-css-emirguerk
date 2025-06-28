@@ -1,0 +1,17 @@
+.opener-section-container{
+    position: relative;
+
+    h1{
+        position: absolute;                                
+        top: 0;
+        right: 0;
+        left: 0;
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        color: #FFF;
+        font-size: clamp(2rem, 5vw, 6rem);
+        text-align: center;
+    }
+}

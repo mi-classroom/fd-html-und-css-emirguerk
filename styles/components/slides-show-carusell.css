@@ -1,0 +1,86 @@
+.slides-show-carusell{
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 2rem 0;
+    border-top: 0.1rem solid #B4B4B4;
+    margin: 1.5rem 2rem;
+    filter: blur(0);
+    gap: 2rem;
+    transition: filter 500ms ease;
+
+    .carusell-image-container{
+        display: grid;
+        max-width: 15rem;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+
+        img{
+            grid-area: 1 / 1 / 2 / 2;
+        }
+
+        img:nth-child(1){
+            transform: rotate(-10deg);
+        }
+        
+        img:nth-child(2){
+            transform: rotate(-5deg);
+        }
+
+        img:nth-child(3){
+            transform: rotate(0deg);
+            transition: transform 1s ease;
+        }
+
+        img:nth-child(3):hover{
+            transform: scale(1.5);
+        }
+    }
+
+    .carusell-navigation{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+
+        div{
+            width: 1rem;
+            height: 1rem;
+            border-radius: 1rem;
+            background-color: #B4B4B4;
+        }
+
+        & > #active-carusell{
+            background-color: #FEB701;
+        }
+    }
+
+    .carusell-button-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        button{
+            width: 2.25rem;
+            height: 2.25rem;
+            border-radius: 1rem;
+            margin: 0;
+            background-color: #FEB701;
+        }
+
+        .icon{
+            color: #FFF;
+        }
+    }
+
+    &.blur{
+        filter: blur(0.5rem);
+    }
+
+}

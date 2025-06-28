@@ -3,7 +3,7 @@ class MainHeader extends HTMLElement {
     this.innerHTML = `
       <header class="header-container">
         <div>
-            <img src="../assets/images/cda-logo.svg" alt="cda-logo">
+            <a href="/"><img src="../assets/images/cda-logo.svg" alt="cda-logo"></a>
         </div>
         <div>
             <button type="button" class="icon-button" data-js-search-button>
