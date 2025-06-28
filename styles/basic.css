@@ -40,9 +40,3 @@ footer{
     padding-top: 4rem;
     background-color: #222;
 }
-
-header{
-    nav, form{
-        display: none;
-    }
-}

@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="../styles/components/overview-container.css">
     <link rel="stylesheet" href="../styles/components/header-container.css">
     <link rel="stylesheet" href="../styles/components/icon-button.css">
+    <link rel="stylesheet" href="../styles/components/search-form.css">
+    <link rel="stylesheet" href="../styles/components/navigation-container.css">
 </head>
 
 <body>
@@ -24,31 +26,6 @@
             <img src="../assets/images/cda-logo.svg" alt="cda-logo">
         </div>
         <div>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="">Archiv</a>
-                        <span>keyboard_arrow_down</span>
-                        <ul>
-                            <li><a href="">Alle Werke</a></li>
-                            <li><a href="">Gemälde</a></li>
-                            <li><a href="">Archivalien</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="">Personen</a>
-                        <span>keyboard_arrow_down</span>
-                        <ul>
-                            <li><a href="">Lucas Cranach</a></li>
-                            <li><a href="">Martin Luther</a></li>
-                            <li><a href="">Über uns</a></li>
-                            <li><a href="">Partner</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="">Forschung</a></li>
-                    <li><a href="">Aktuelles</a></li>
-                </ul>
-            </nav>
             <button type="button" class="icon-button">
                 <span class="icon">search</span>
             </button>
@@ -57,13 +34,13 @@
             </button>
         </div>
 
-        <form action="/persons/lucas-cranach.html">
+        <form action="/" class="search-form">
             <div>
                 <button type="button" class="icon-button">
                     <span class="icon">close</span>
                 </button>
             </div>
-            <div>
+            <div class="search-form-input-container">
                 <label for="search"></label>
                 <input type="text" id="search" placeholder="Suchwort eingeben">
 
@@ -71,10 +48,10 @@
             </div>
         </form>
 
-        <nav>
+        <nav class="navigation-container">
             <div>
-                <button type="button">
-                    <span>close</span>
+                <button type="button" class="icon-button">
+                    <span class="icon">close</span>
                 </button>
             </div>
             <ul>
