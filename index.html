@@ -21,13 +21,15 @@
     <link rel="stylesheet" href="./styles/components/opener-section-container.css">
     <link rel="stylesheet" href="./styles/components/intro-text.css">
     <link rel="stylesheet" href="./styles/components/slides-show-carusell.css">
+    <link rel="stylesheet" href="./styles/components/masonary.css">
+    <link rel="stylesheet" href="./styles/components/number-info-container.css">
 
     <script src="./assets/components/main-header.js"></script>
     <script src="./assets/components/main-footer.js"></script>
 </head>
 
 <body>
-    <main-header />
+    <main-header></main-header>
     <main>
         <section class="opener-section-container">
             <h1>Discover the work of Lucas Cranach</h1>
@@ -41,6 +43,23 @@
                 und der Öffentlichkeit einen zentralen Zugang zu detaillierten Informationen über Cranachs Werke zu
                 ermöglichen und den Austausch wissenschaftlicher Erkenntnisse zu fördern. </p>
         </div>
+
+        <figure class="masonary-container">
+            <img src="./assets/images/masonry.jpg" alt="masonry" style="grid-column: span 2; grid-row: span 2;">
+            <img src="./assets/images/masonry (1).jpg" alt="masonry" style="grid-column: span 2; grid-row: span 2;">
+            <img src="./assets/images/masonry (2).jpg" alt="masonry" style="grid-column: span 1; grid-row: span 2;">
+            <img src="./assets/images/masonry (3).jpg" alt="masonry" style="grid-column: span 1; grid-row: span 3;">
+            <img src="./assets/images/masonry (4).jpg" alt="masonry" style="grid-column: span 1; grid-row: span 4;">
+            <img src="./assets/images/masonry (5).jpg" alt="masonry" style="grid-column: span 2; grid-row: span 4;">
+            
+            <figcaption class="masonary-container-caption" style="grid-column: span 2; grid-row: span 1;">
+                <h3>Gemälde, <br> Archivalien und Literatur</h3>
+                <button type="button">Entdecken</button>
+            </figcaption>
+            
+            <img src="./assets/images/masonry (6).jpg" alt="masonry" style="grid-column: span 3; grid-row: span 3;">
+        </figure>
+
         <figure class="slides-show-carusell">
             <div class="carusell-button-container">
                 <button type="button" class="icon-button"><span class="icon">chevron_right</span></button>
@@ -58,8 +77,51 @@
                 <div data-js-active-carusell></div>
             </div>
         </figure>
+
+        <dl class="number-info-container">
+            <figure style="grid-column: span 2;grid-row: span 2;">
+                <span class="icon">menu</span>
+                <figcaption>
+                    <dt>25.050</dt>
+                    <dd>hochauflösende Abbildungen</dd>
+                </figcaption>
+            </figure>
+
+            <figure style="grid-column: span 2;grid-row: span 1;">
+                <span class="icon">menu</span>
+                <figcaption>
+                    <dt>25.050</dt>
+                    <dd>hochauflösende Abbildungen</dd>
+                </figcaption>
+            </figure>
+
+            <figure style="grid-column: span 2;grid-row: span 1;">
+                <span class="icon">menu</span>
+                <figcaption>
+                    <dt>25.050</dt>
+                    <dd>hochauflösende Abbildungen</dd>
+                </figcaption>
+            </figure>
+
+            <figure style="grid-column: span 2;grid-row: span 1;">
+                <span class="icon">menu</span>
+                <figcaption>
+                    <dt>25.050</dt>
+                    <dd>hochauflösende Abbildungen</dd>
+                </figcaption>
+            </figure>
+
+            <figure style="grid-column: span 2;grid-row: span 1;">
+                <span class="icon">menu</span>
+                <figcaption>
+                    <dt>25.050</dt>
+                    <dd>hochauflösende Abbildungen</dd>
+                </figcaption>
+            </figure>
+        </dl>
+        
     </main>
-    <main-footer />
+    <main-footer></main-footer>
 
     <script src="./scripts/navigation.js" defer></script>
     <script src="./scripts/search.js" defer></script>

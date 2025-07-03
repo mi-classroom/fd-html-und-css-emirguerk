@@ -1,0 +1,35 @@
+.masonary-container{
+    display: grid;
+    padding: 2rem;
+    gap: 1rem;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+
+    img{
+        height: 100%;
+    }
+}
+
+.masonary-container-caption{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h3{
+        text-align: center;
+    }
+
+    button{
+        padding: 0.25rem 0.75rem;
+        border: 0.1rem solid #FFF;
+        border-radius: 0.125rem;
+        background-color: #FEB701;
+        color: #FFF;
+    }
+
+    button:hover{
+        border: 0.1rem solid #000;
+        cursor: pointer;
+    }
+}
